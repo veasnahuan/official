@@ -1,0 +1,35 @@
+a {
+	color: hsla(200, 60%, 45%, 1);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+.bio:nth-child(2) {
+	
+}
+.bio {
+	width: 350px; 
+	font-family: 'Josefin Sans', sans-serif;
+	float: left;
+	margin: 20px;
+}
+.bio header {
+	color: red;
+}
+.bio header img {
+	max-width: 100%;
+	border-radius: 20px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: black;
+}
+.bio header h1 {
+	margin: 0;
+}
+
+.bio footer {
+	background-color: hsla(0, 0%, 0%, .1);
+	padding: 10px;
+}
