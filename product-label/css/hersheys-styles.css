@@ -1,0 +1,49 @@
+*,*:before, *:after {
+	box-sizing: boder-box;
+}
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+section {
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+	height: 200px;
+	background-color: 3e0e02;
+	border-color: silver;
+	border-width: 7px;
+	border-style: solid;
+
+
+}
+
+header {
+	font-size: 120px;
+	color: silver;
+	font-family: sans-serif;
+	position: relative;
+	top: 25px;
+	padding-left: 5px;
+
+} 
+
+p {
+	color: silver;
+	position: relative;
+	bottom: 55px;
+	left: 580px;
+	font-size: 28px;
+}
+
+
+
+
+
+	
+
+
+

@@ -1,0 +1,47 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+body {
+	background-color: red;
+
+}
+
+img {
+	float: right;
+	background-color: white;
+	display: block;
+	width: 33%;
+	
+}
+
+img:first-child {
+	float: left;
+	padding: 20px;
+}
+
+section {
+	width: 66%;
+	float: left;
+}
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+p {
+	float: left;
+	width: 66%;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+div {
+	background-color: orange;
+}
