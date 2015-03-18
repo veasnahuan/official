@@ -1,0 +1,58 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+.clearfix::before,
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+body {
+	margin: 0;
+}
+#wrapper {
+	width: 400px;
+}
+header {
+	background-color: hsla(357, 87%, 43%, 1);
+	overflow: hidden;
+}
+header h2 {
+	background-color: hsla(0, 0%, 100%, 1);
+	width: 70%;
+	margin: 45px auto 20px;
+	border-radius: 22px;
+	text-transform: uppercase;
+	padding: 10px 0;
+	letter-spacing: 2px; 
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+main img {
+	width: 35%;
+	display: block;
+	margin: 0 auto;
+}
+
+body  {
+	text-align: center; 
+}
+
+main h1 {
+	font-size: 105px;
+	font-family: "Unna", serif;
+
+}	
+
+main h3 {
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-family: "Syncopate", sans-serif;
+	color: hsla(38, 31%, 49%, 1);
+}
+
+main {
+	border-bottom: 10px solid hsla(357, 87%, 43%, 1);
+}
+
