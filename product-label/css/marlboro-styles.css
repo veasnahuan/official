@@ -12,6 +12,8 @@ body {
 }
 #wrapper {
 	width: 400px;
+	margin: 25px auto;
+	box-shadow: 0 0 25px 0 hsla(0, 0%, 0%, .40);
 }
 header {
 	background-color: hsla(357, 87%, 43%, 1);
@@ -31,7 +33,8 @@ header h2 {
 main img {
 	width: 35%;
 	display: block;
-	margin: 0 auto;
+	margin: 125px auto 0;
+
 }
 
 body  {
@@ -41,7 +44,7 @@ body  {
 main h1 {
 	font-size: 105px;
 	font-family: "Unna", serif;
-
+	margin: 25px 0;
 }	
 
 main h3 {
@@ -54,5 +57,28 @@ main h3 {
 
 main {
 	border-bottom: 10px solid hsla(357, 87%, 43%, 1);
+	overflow: hidden;
+	position: relative;
+}
+
+main::before,
+main::after {
+	content: "";
+	display: block; 
+	position: absolute;
+	top: 0;
+	border-width: 100px;
+	border-style: solid;
+	
+}
+
+main::before {
+	left: 0;
+	border-color:hsla(357, 87%, 43%, 1) transparent transparent hsla(357, 87%, 43%, 1);
+}
+
+main::after {
+	right: 0;
+	border-color: hsla(357, 87%, 43%, 1) hsla(357, 87%, 43%, 1) transparent transparent;
 }
 

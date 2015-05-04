@@ -1,0 +1,94 @@
+
+@import "reset";
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+
+$base-color: hsla(283, 100%, 50%, 1);
+$light-base: lighten($base-color, 20);
+$dark-base: darken($base-color, 20);
+$white-base: lighten(grayscale($base-color), 30);
+$black-base: darken(grayscale($base-color), 30);
+$comp-base: complement($base-color);
+
+%bordering {
+	border-width: 1px;
+	border-style: solid;
+	border-color: $black-base;
+}
+
+@mixin border-mixin($width, $style, $color) {
+	border-width: $width;
+	border-style: $style;
+	border-color: $color;
+}
+@mixin gradient-mixin($x, $y) {
+	background-image: linear-gradient($x, $y);
+}
+
+body {
+	background-color: gray;
+}
+
+#friends {
+	width: 252px;
+	
+	ul {
+		padding: 0;
+		margin: 0;
+	li {
+		@include border-mixin(5px, dashed, pink);
+		@include gradient-mixin(yellow, purple);
+		//@extend %bordering;
+		padding: 5px;
+		//background-image: linear-gradient(lighten($black-base, 10), $black-base);
+		color: $white-base;
+
+		&.active {
+			//background-image: linear-gradient($base-color, $black-base);
+			@include gradient-mixin(pink, purple);
+		}	
+		}
+	}
+
+	li::before,
+	li::after {
+		@extend %clearfix;
+	}
+	img {
+		width: 50px;
+		float: left;
+		margin-right: 5px;
+		border-radius: 50%;
+		//@extend %bordering;
+		@include border-mixin(2px, dotted, pink);
+	}
+	h2,h3 {
+		margin: 0;
+		font-size: 16px;
+		font-family: sans-serif;
+	}
+	h2 {
+		font-weight: 900;
+	}
+	h3 {
+		font-weight: 100;
+		font-style: italic;
+	}
+	li div:first-of-type {
+		width: 150px;
+		float: left;
+	}
+	li div:last-of-type {
+		float: left;
+	}
+	button {
+		@include border-mixin(0px, groove, pink);
+		//@extend %bordering;
+		background-color: $black-base;
+		border-radius: 4px;
+		
+	}
+	
+}
+
+$buttonclr: hsla(52, 100%, 50%, 1)
+

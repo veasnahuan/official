@@ -1,0 +1,85 @@
+*,*:before;
+*:after {
+	box-sizing: border-box;
+}
+
+.clearfix:before;
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.left {
+	float: left;
+}
+
+section p {
+	margin-left: auto;
+	margin-right: auto;
+	width: 450px;
+}
+
+body {
+	background: radial-gradient(#3281c0, #072a6b);
+	background-repeat: no-repeat;
+}
+
+
+
+h1 {
+	font-size: 25px;
+	font-color: white;
+	
+}
+
+
+
+#smalllogo {
+	position: absolute;
+	width: 160px;
+	right: 225px;
+	top: 20px;
+}
+
+#pepsi {
+	position: absolute;
+  	width: 40px;
+  	right: 350px;
+  	top: 125px;
+}
+
+#recycle {
+	position: absolute;
+  	width: 40px;
+  	right: 353px;
+  	top: 170px;
+}
+
+#baseball {
+  position: absolute;
+  width: 55px;
+  right: 345px;
+  top: 240px;
+}
+
+#osmosis {
+  position: absolute;
+  width: 40px;
+  right: 278px;
+  top: 171px;
+}
+
+#eco {
+  position: absolute;
+  width: 40px;
+  right: 210px;
+  top: 171px;
+}
+
+#barcode {
+  position: absolute;
+  width: 100px;
+  right: 173px;
+  top: 272px;
+}

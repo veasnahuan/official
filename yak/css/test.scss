@@ -1,0 +1,31 @@
+@import "reset";
+
+$clrf: hsla(285, 100%, 50%, 1);
+$clrb: hsla(360, 86%, 31%, 1);
+$blk: hsla(0, 60%, 5%, 1);
+$lblk: lighten(hsla(0, 60%, 5%, 1), 20);
+$but: darken(hsla(360, 86%, 31%, 1), 5);
+
+h1,h2 {
+	margin: 0;
+}
+main {
+	width: 300px;
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
+li {
+	border-width: 1px;
+	border-style: solid;
+	border-color: $clrb;
+	color: $blk;
+	font-family: sans-serif;
+	padding: 10px;
+	background: linear-gradient($clrf, $lblk);
+	
+}
+button {
+	background-color: $but;
+	float: right;

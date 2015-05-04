@@ -1,0 +1,260 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+%clearfix {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+body, h1, h2, h3, ul {
+	margin: 0;
+}
+
+h1, h2, h3 {
+	font-family: Impact;
+}
+h1 {
+	font-size: 3em;
+}
+h2 {
+	font-size: 2em;
+}
+h3 {
+	font-size: 1.75em;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	color: hsla(0, 0%, 5%, 1);
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+button {
+			background-color: hsla(0, 0%, 95%, 1);
+			border: none;
+			padding: 10px 20px;
+			font-size: 1em;
+			float: right;
+		}
+
+header {
+	background-color: gray;
+	nav {
+		&::before, &::after {
+			@extend %clearfix;
+		}
+		background-color: white;
+
+	> a {
+		display: block;
+		width: 75px;
+		height: 75px;
+		background-image: url(https://files.slack.com/files-pri/T03QAUMCG-F04AM2MFR/th.jpg);
+		background-size: 100%;
+		text-indent: -9999px;
+		float: left;
+		}
+		
+		ul {
+			float: right;
+		}
+		li {
+			display: inline-block;
+			line-height: 75px;
+			a { 
+				padding: 0 20px;
+			}
+		}
+	}
+	#hero {
+		background-image: url(https://files.slack.com/files-pri/T03QAUMCG-F04AMFA57/outrun-t-rex-orig.jpg);
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		padding: 80px 20px 40px;
+		color: white;
+		p {
+			width: 50%;
+		}
+		button {
+			float: none;
+		}
+
+	}
+}
+
+section {
+	&::before, &::after {
+		@extend %clearfix;
+	}
+	padding: 20px;
+	h2, ul, span {
+		width: 50%;
+	}
+	h2 {
+		margin-bottom: 40px;
+	}
+}
+
+section:first-of-type {
+	background-color: hsla(197, 90%, 41%, 1);
+	background-image: url(https://files.slack.com/files-pri/T03QAUMCG-F04B2GBGH/dino-large_large_large.png);
+	background-size: 70%;
+	background-position: 150% 20px;
+	background-repeat: no-repeat;
+}
+section:nth-of-type(2) {
+	background-color: hsla(228, 18%, 52%, 1);
+	background-image: url(https://files.slack.com/files-pri/T03QAUMCG-F04B2MMQP/velicoraptor-dinosaur_1.png);
+	background-size: 70%;
+	background-position: -50% 20px;
+	background-repeat: no-repeat;
+	h2, span {
+		float: right;
+		text-align: right;
+		clear: right;
+	}
+
+}
+section:last-of-type {
+	
+	background-image: url(https://files.slack.com/files-pri/T03QAUMCG-F04AMNU01/7412196590_622d8c6956.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	div {
+		width: 300px;
+		padding: 10px;
+		margin: 10px;
+		float: left;
+		background-color: hsla(0, 0%, 95%, .4);
+		h3 {
+
+		}
+		
+	}
+}
+
+footer {
+	&::before, &::after {
+		@extend %clearfix;
+	}
+	background-color: hsla(0, 0%, 5%, 1);
+	color: white;
+	padding: 20px;
+	
+	ul, address {
+		float: left;
+		width: 33.3333%;
+		list-style: none;
+		padding: 0;
+		line-height: 1.5;
+	}
+	
+}
+
+@media screen and (max-width: 450px) {
+	header nav {
+		> a {
+			width: 125px;
+			height: 125px;
+			float: none;
+			margin: 0 auto;
+		}
+		ul {
+			width: 100%;
+			padding: 0;
+		}
+		li {
+			display: block;
+			text-align: center;
+			
+		}
+	}
+	#hero {
+		width: 100%;
+		text-align: center;
+	}
+		p{
+		margin: 0 auto;
+		}
+		button {
+			width: 100%;
+
+		}
+	section {
+		&::before, &::after {
+			//@extend %clearfix;
+		}
+		padding: 20px;
+		h2, span {
+			width: 50%;
+		}
+		ul {
+			margin: 0 auto;
+			width: 100%;
+		}
+		span {
+			margin: 0 auto;
+			width: 100%;
+			p{
+				text-align: center;
+			}
+			h3 {
+				width: 100%;
+				margin: 0 auto;
+			}
+
+		}
+	}
+	section:last-of-type {
+		div {
+			width: 100%;
+			margin: 0 auto 10px;
+
+		}
+		p {
+			text-align: center;
+		}
+	}
+
+footer {
+	p{
+		text-align: left;
+	}
+	ul{
+		width: 100%;
+		padding-bottom: 24px;
+	}
+		li{
+			text-align: center;
+		}
+		address{
+			width: 100%;
+			text-align: center;
+		}
+
+	}
+}	
+@media screen and (max-width: 768px) {
+	section:last-of-type {
+		button {
+			width: 100%
+		}
+	}
+}
+
+
+	
+	
+
+
+
