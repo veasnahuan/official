@@ -1,0 +1,54 @@
+body {
+  background-color: #e8e8e8;
+}
+
+.logo {
+  display: block;
+  max-height: 50px;
+  max-width: 166px;
+  width: auto;
+  height: auto;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#dancer {
+  height: 600px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#wat {
+  height: 600px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#buddha {
+  height: 600px;
+  width: 900px;
+  margin: 0 auto;
+}
+
+#royal {
+  padding-top: 60px;
+}
+
+#btn {
+  margin-top: 20px;
+  background-color: grey;
+  border-color: grey;
+  color: black;
+}
+
+.center-img {
+  display: block;
+  margin: 0 auto 20px;
+}
